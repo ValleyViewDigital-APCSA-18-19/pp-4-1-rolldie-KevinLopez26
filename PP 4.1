@@ -1,0 +1,19 @@
+package die;
+import java.util.*;
+
+public class DieDriver
+{
+	public static void main (String[] args)
+	{
+		int numSide;
+		Scanner input = new Scanner(System.in);
+		//makes numSide equal to the value entered by the user
+		System.out.println("Enter the number of sides the die has ");
+		numSide = input.nextInt();
+		//creates a new die
+		Die myDie = new Die(numSide);
+		//prints the value rolled by the die
+		System.out.println(myDie.roll());
+	}
+
+}
