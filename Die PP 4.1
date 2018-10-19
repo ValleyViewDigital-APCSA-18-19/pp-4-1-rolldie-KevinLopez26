@@ -1,0 +1,17 @@
+package die;
+import java.util.*;
+
+public class Die 
+{
+	public int numSides;
+	public Die(int sides)
+	{
+		numSides = sides;
+	}
+	//rolls the die
+	public int roll()
+	{
+		return (int) (Math.random() * numSides) + 1;
+	}
+
+}
